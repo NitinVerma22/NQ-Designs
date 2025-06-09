@@ -84,13 +84,13 @@ export default function ContactPage() {
 
           <div className="flex gap-4 flex-wrap justify-center">
             <a
-              href="tel:+917800714729"
+              href="tel:+918853008603"
               className="bg-yellow-800 text-white px-5 py-2 rounded-full hover:bg-gray-800 transition"
             >
               📞 Call Now
             </a>
             <a
-              href="https://wa.me/917800714729"
+              href="https://wa.me/918853008603"
               target="_blank"
               rel="noopener noreferrer"
               className="bg-green-600 text-white px-5 py-2 rounded-full hover:bg-green-700 transition"
