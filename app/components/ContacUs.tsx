@@ -45,7 +45,7 @@ export default function ContactPage() {
           <div className="space-y-4 text-gray-700 text-base">
             <div className="flex items-center gap-3">
               <FaMapMarkerAlt className="text-primary" />
-              <span>Near Riviera Phase II Gomati Nagar  Extension , Lucknow, India</span>
+              <span>Near Ekana Stadium, Gomti Nagar  Extension , Lucknow, Uttar Pradesh, India</span>
             </div>
             <div className="flex items-center gap-3">
               <FaPhoneAlt className="text-primary" />
