@@ -58,7 +58,7 @@ export default function Footer() {
         </div>
       </div>
 
-      <div className="text-center mt-10 text-sm text-gray-700">
+      <div className="text-center mt-8 text-sm text-gray-700">
         &copy; {year} NQ Designs Private Limited. All rights reserved.
       </div>
     </footer>
