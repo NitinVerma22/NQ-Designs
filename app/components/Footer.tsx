@@ -30,7 +30,7 @@ export default function Footer() {
             Email: <a href="mailto:nqdesigns87@gmail.com" className="text-blue-400 hover:underline">designsnq@gmail.com</a>
           </p>
           <p>Phone: +91 8853008603</p>
-          <p>Address: Near Rustle Court, Gomati Nagar Extension, Lucknow, India</p>
+          <p>Address: Near Ekana Cricket Stadium, Gomti Nagar Extension, Lucknow,Uttar Pradesh India</p>
         </div>
 
         {/* Quick Links - Only on Desktop */}
