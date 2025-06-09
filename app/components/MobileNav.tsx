@@ -7,8 +7,8 @@ import { useEffect, useState } from "react";
 
 const navIcons = [
   { name: "Home", path: "/", icon: Home },
-  { name: "Portfolio", path: "/portfolio", icon: Layout },
-  { name: "Contact Us", path: "/contact", icon: Phone },
+  { name: "About", path: "/#portfolio", icon: Layout },
+  { name: "Contact Us", path: "/#contact", icon: Phone },
 ];
 
 export default function MobileNav() {
