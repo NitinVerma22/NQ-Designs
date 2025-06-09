@@ -1,32 +1,8 @@
 'use client';
 
-import { useEffect, useRef } from 'react';
 import Link from 'next/link';
 
 const PortfolioSection = () => {
-  const scrollRef = useRef<HTMLDivElement>(null);
-
-  useEffect(() => {
-    const container = scrollRef.current;
-    if (!container) return;
-
-    let scrollAmount = 0;
-    const speed = 1;
-    const interval = 30;
-
-    const scrollInterval = setInterval(() => {
-      if (container.scrollTop + container.clientHeight >= container.scrollHeight) {
-        scrollAmount = 0;
-        container.scrollTop = 0;
-      } else {
-        scrollAmount += speed;
-        container.scrollTop = scrollAmount;
-      }
-    }, interval);
-
-    return () => clearInterval(scrollInterval);
-  }, []);
-
   return (
     <section className="grid grid-cols-1 md:grid-cols-2 items-center gap-6 md:gap-12 bg-[#9d8977] rounded-2xl shadow px-4 py-6 max-w-full overflow-x-hidden">
       
@@ -46,22 +22,27 @@ const PortfolioSection = () => {
         </Link>
       </div>
 
-      {/* PDF Auto Scroll Section */}
+      {/* Cloudinary Video Embed */}
       <div className="max-w-full w-full bg-white shadow-xl rounded-xl overflow-hidden p-4 border border-yellow-800 mx-auto">
         <h2 className="text-xl font-bold text-yellow-800 mb-4 text-center">Portfolio</h2>
-        <div
-          ref={scrollRef}
-          className="h-96 overflow-y-scroll rounded-md border border-yellow-800"
-        >
+        <div className="relative w-full aspect-[9/16] border border-yellow-800 rounded-md overflow-hidden">
           <iframe
-            src="/my_broucher.pdf"
-            className="w-full min-h-[7200px]"
-            allow="autoplay"
-          ></iframe>
+  src="https://player.cloudinary.com/embed/?cloud_name=dqk43sqxo&public_id=WhatsApp_Video_2025-06-09_at_12.02.07_PM_q7gahi&profile=cld-default&autoplay=1&muted=1&controls=0&loop=1&poster=https://res.cloudinary.com/dqk43sqxo/image/upload/6ab0f5b7-3006-43c2-8845-6e539a46cdb1_kgrfk7.jpg/dqk43sqxo/image/upload/v1717920000/thumbnail.jpg"
+  allow="autoplay; fullscreen; encrypted-media"
+  allowFullScreen
+  className="w-full h-full"
+  loading="lazy"
+  title="Portfolio Video"
+/>
         </div>
-        <button className="mt-4 w-full border border-yellow-800 text-yellow-800 py-2 rounded hover:bg-yellow-100 transition">
-          View
-        </button>
+        <a
+          href="/my_broucher.pdf"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="mt-4 block w-full text-center border border-yellow-800 text-yellow-800 py-2 rounded hover:bg-yellow-100 transition"
+        >
+          View Portfolio
+        </a>
       </div>
     </section>
   );
