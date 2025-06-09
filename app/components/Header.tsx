@@ -62,7 +62,7 @@ export default function Header() {
         {/* Social Icons */}
         
         <div className="flex  space-x-5 ml-12 border rounded-full p-2 px-2 border-yellow-800">
-           <a href="tel:+917800714729" target="_blank" rel="noopener noreferrer"><FaPhone className="text-yellow-800 text-lg" /></a>
+           <a href="tel:+918853008603" target="_blank" rel="noopener noreferrer"><FaPhone className="text-yellow-800 text-lg" /></a>
           <a href="https://www.facebook.com/nqdesigns.lucknow" target="_blank" rel="noopener noreferrer"><FaFacebook className="text-yellow-800 text-lg" /></a>
           <a href="https://www.instagram.com/_nqdesigns" target="_blank" rel="noopener noreferrer"><FaInstagram className="text-yellow-800 text-lg" /></a>
           <a href="mailto:designsnq@gmail.com" target="_blank" rel="noopener noreferrer"><FaEnvelope className="text-yellow-800 text-lg" /></a>
@@ -79,7 +79,7 @@ export default function Header() {
 
       {/* ================= Mobile Nav Menu ================= */}
       {menuOpen && (
-        <div className="md:hidden fixed top-20 right-0 w-1/2 h-[calc(100vh-5rem)] z-50 dark:bg-[#fefefe]/90 backdrop-blur-md shadow-sm border-l border-yellow-800 px-4 py-6 animate-slideIn">
+        <div className="md:hidden fixed top-20 right-0 w-1/2 h-[calc(100vh-5rem)] z-50 bg-[#fefefe]/90 backdrop-blur-md shadow-sm border-l border-yellow-800 px-4 py-6 animate-slideIn">
 
           {/* Close Button */}
           <button onClick={() => setMenuOpen(false)} className="absolute top-4 right-4 text-yellow-800 text-3xl font-bold">
