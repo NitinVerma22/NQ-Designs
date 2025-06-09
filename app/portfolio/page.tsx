@@ -272,22 +272,25 @@ const PortfolioPage = () => {
           </section>
         </AnimatedOnScroll>
          <AnimatedOnScroll>
-          <section className="grid md:grid-cols-2 items-center gap-8 bg-[#9d8977] rounded-2xl shadow">
-    <PdfAutoScrollCard/>
-            <div>
-              <h2 className=" text-5xl font-bold mb-4 text-white p-4">Ready to Transform Your Space?</h2>
-              <p className="text-white mb-6 p-4">
-                Let's bring your dream space to life with our expert design and architecture
-                services.
-              </p>
-              <Link
-                href="/contact"
-                className="inline-block text-white bg-yellow-800 px-6 py-3 rounded-full hover:bg-yellow-700 hover:text-white transition m-4"
-              >
-                Get Free Consultation
-              </Link>
-            </div>
-          </section>
+          <section className="grid md:grid-cols-2 items-center gap-4 bg-[#9d8977] rounded-2xl shadow px-4 py-6 max-w-full overflow-x-hidden">
+  <PdfAutoScrollCard />
+  <div>
+    <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-4 text-white p-2">
+      Ready to Transform Your Space?
+    </h2>
+    <p className="text-white mb-6 p-2">
+      Let's bring your dream space to life with our expert design and architecture
+      services.
+    </p>
+    <Link
+      href="/contact"
+      className="inline-block text-white bg-yellow-800 px-6 py-3 rounded-full hover:bg-yellow-700 transition m-2"
+    >
+      Get Free Consultation
+    </Link>
+  </div>
+</section>
+
         </AnimatedOnScroll>
         
       </main>
