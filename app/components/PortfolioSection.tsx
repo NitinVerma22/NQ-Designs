@@ -1,8 +1,10 @@
 'use client';
 
 import Link from 'next/link';
-
+import FreeConsultationModal from "./FreeConsultationModal";
 const PortfolioSection = () => {
+    const [modalOpen, setModalOpen] = useState(false);
+
   return (
     <section className="grid grid-cols-1 md:grid-cols-2 items-center gap-6 md:gap-12 bg-[#9d8977] rounded-2xl shadow px-4 py-6 max-w-full overflow-x-hidden">
       
@@ -14,12 +16,15 @@ const PortfolioSection = () => {
         <p className="text-white mb-6">
           Let's bring your dream space to life with our expert design and architecture services.
         </p>
-        <Link
-          href="/contact"
-          className="inline-block text-white bg-yellow-800 px-6 py-3 rounded-full hover:bg-yellow-700 transition"
-        >
-          Get Free Consultation
-        </Link>
+                   <button
+                onClick={() => {
+                  setMenuOpen(false);
+                  setModalOpen(true);
+                }}
+                className="w-full py-3 text-sm bg-yellow-800 text-white font-bold rounded-md hover:bg-yellow-600 transition shadow-md animate-pulse"
+              >
+                Free Consultation
+              </button>
       </div>
 
       {/* Cloudinary Video Embed */}
@@ -44,6 +49,8 @@ const PortfolioSection = () => {
           View Portfolio
         </a>
       </div>
+            <FreeConsultationModal isOpen={modalOpen} onClose={() => setModalOpen(false)} />
+   
     </section>
   );
 };
