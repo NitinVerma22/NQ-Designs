@@ -17,7 +17,6 @@ const PortfolioSection = () => {
         </p>
                    <button
                 onClick={() => {
-                  setMenuOpen(false);
                   setModalOpen(true);
                 }}
                 className="w-full py-3 text-sm bg-yellow-800 text-white font-bold rounded-md hover:bg-yellow-600 transition shadow-md animate-pulse"
