@@ -7,7 +7,7 @@ const PortfolioSection = () => {
   const [modalOpen, setModalOpen] = useState(false);
 
   return (
-    <section className="grid grid-cols-1 md:grid-cols-2 items-center gap-6 md:gap-12 bg-[#9d8977] rounded-2xl shadow px-4 py-6 max-w-full overflow-x-hidden">
+    <section className="grid grid-cols-1 md:grid-cols-2 items-center gap-6 md:gap-12 bg-[#9d8977] rounded-2xl shadow px-4 py-6 max-w-full h-[60vh] overflow-x-hidden">
       
       {/* Text Section */}
       <div className="text-center md:text-left">
