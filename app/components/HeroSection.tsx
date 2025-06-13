@@ -84,7 +84,7 @@ export default function StaticHero() {
   return (
     <div
       className={`relative w-full ${
-        isMobile ? "h-[100vh]" : "h-[60vh] md:h-[90vh]"
+        isMobile ? "h-[40vh]" : "h-[60vh] md:h-[90vh]"
       } overflow-hidden`}
     >
       <Image
