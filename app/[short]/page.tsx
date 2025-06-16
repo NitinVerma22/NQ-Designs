@@ -1,6 +1,6 @@
 // app/[short]/page.tsx
-import links from '../data/links.json'
 import { redirect, notFound } from 'next/navigation'
+import links from '../data/links.json'
 
 type Props = {
   params: {
@@ -16,4 +16,10 @@ export default function ShortRedirect({ params }: Props) {
   }
 
   notFound()
+}
+
+export async function generateStaticParams() {
+  return Object.keys(links).map((short) => ({
+    short,
+  }))
 }
