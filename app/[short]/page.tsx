@@ -1,9 +1,14 @@
 // app/[short]/page.tsx
-import { redirect, notFound } from 'next/navigation'
 import links from '../data/links.json'
-import type { PageProps } from 'next'
+import { redirect, notFound } from 'next/navigation'
 
-export default async function ShortRedirect({ params }: PageProps) {
+type Props = {
+  params: {
+    short: string
+  }
+}
+
+export default function ShortRedirect({ params }: Props) {
   const url = (links as Record<string, string>)[params.short]
 
   if (url) {
